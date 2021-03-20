@@ -58,6 +58,11 @@ PasswordAuthentication no
 ChallengeResponseAuthentication yes
 ```
 
+Enable EPEL(needed for x86)
+```console
+yum install epel-release
+```
+
 Update machine by, and restart to make sure every configuration will take effect
 ```console
 sudo yum update
@@ -73,5 +78,3 @@ Then you can follow guides:
 
 1. https://wiki.minix3.org/doku.php?id=developersguide:crosscompiling
 2. https://wiki.minix3.org/doku.php?id=developersguide:minixonarm
-
-Unfortunatly this guide do not allow to croscompile for i86
