@@ -60,7 +60,8 @@ ChallengeResponseAuthentication yes
 
 Enable EPEL(needed for x86)
 ```console
-yum install epel-release
+sudo yum install epel-release
+sudo yum groupinstall "Development Tools"
 ```
 
 Update machine by, and restart to make sure every configuration will take effect
