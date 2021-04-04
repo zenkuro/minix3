@@ -1,4 +1,4 @@
-#Testing Minix
+# Testing Minix
 
 This guide provide decription on running Minix on Lenaro hosted on Centos7.
 
@@ -25,7 +25,9 @@ $ make install
 
 Now you have a QEMU in $HOME/qemu/bin/qemu-system-arm and can test a BeagleBoard-xM build on qemu by running:
 
+```bash
 # $HOME/qemu/bin/qemu-system-arm  -M beaglexm -drive if=sd,cache=writeback,file=minix_arm_sd.img -clock unix -serial stdio -device usb-kbd -device usb-mouse -usb
+```
 
 If you run into problems booting Minix with Linaro Qemu current, try QEMU emulator version 1.3.0 (qemu-linaro 2012.12). It is known to work with Minix current.
 
