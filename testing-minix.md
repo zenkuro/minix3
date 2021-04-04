@@ -17,8 +17,8 @@ If you have both python 2 and 3 installed, you may have to specify the path to p
 $ cd $HOME
 $ git clone git://git.linaro.org/qemu/qemu-linaro.git linaro
 $ cd linaro
-$ sudo yum install gtk2-devel libfdt-dev libfdt
-$ ./configure --target-list=arm-softmmu --prefix=$HOME/qemu --disable-werror
+$ sudo yum install gtk2-devel libfdt-dev libfdt ncurses-devel
+$ ./configure --target-list=arm-softmmu --prefix=$HOME/qemu --disable-werror 
 $ make
 $ make install
 ```
